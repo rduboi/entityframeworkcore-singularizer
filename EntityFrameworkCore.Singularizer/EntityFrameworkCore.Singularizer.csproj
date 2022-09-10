@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>EntityFrameWorkCore.Singularizer</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Robin Dubois</Authors>
+        <Company>https://github.com/rdubois</Company>
+        <Description>
+            Simple project that aim at facilitate the singularization of EntityFrameworkCore tables names.
+            It is using Humanizer to do so - https://github.com/Humanizr/Humanizer.
+        </Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Humanizer" Version="2.14.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.8" />
+    </ItemGroup>
+
+</Project>
